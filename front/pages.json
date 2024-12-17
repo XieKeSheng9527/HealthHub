@@ -1,0 +1,432 @@
+{
+	"pages": [ {
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "Home"
+		}
+	},{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "登录"
+		}
+	}, {
+		"path": "pages/register/register",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "注册"
+		}
+	}, {
+		"path": "pages/forget/forget",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "忘记密码"
+		}
+	}, {
+		"path": "pages/center/center",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "Mine"
+		}
+	}, {
+		"path": "pages/user-info/user-info",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "user information"
+		}
+	}
+	, {
+		"path": "pages/chat/chat",
+		"style": {
+			"navigationBarTitleText": "health counseling"
+		}
+	}
+	,{
+		"path": "pages/yonghu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/yonghu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/yonghu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/jiankangzhishiku/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/jiankangzhishiku/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/jiankangzhishiku/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/zhishileixing/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/zhishileixing/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/zhishileixing/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/shiwuyingyang/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/shiwuyingyang/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/shiwuyingyang/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/meiriyinshi/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/meiriyinshi/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/meiriyinshi/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/yinshijihua/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/yinshijihua/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/yinshijihua/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/yundongrizhi/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/yundongrizhi/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/yundongrizhi/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/yundongjihua/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/yundongjihua/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/yundongjihua/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/jiankangxinxi/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/jiankangxinxi/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/jiankangxinxi/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/jiankangpinggu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/jiankangpinggu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/jiankangpinggu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/jiankangtixing/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/jiankangtixing/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/jiankangtixing/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/shishibushuhehuodongzhuizong/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/shishibushuhehuodongzhuizong/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/shishibushuhehuodongzhuizong/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/mubiaogenzongyubaogao/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/mubiaogenzongyubaogao/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/mubiaogenzongyubaogao/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/storeup/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/storeup/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/storeup/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+	,{
+		"path": "pages/discussjiankangzhishiku/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/discussjiankangzhishiku/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	},{
+		"path": "pages/discussjiankangzhishiku/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+		}
+	}
+    , {
+		"path": "pages/forum-index/forum-index",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "home page"
+		}
+	}, {
+		"path": "pages/forum-detail/forum-detail",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "Community interactive posting details"
+		}
+	}, {
+		"path": "pages/forum-reply/forum-reply",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "Reply to comments"
+		}
+	}, {
+		"path": "pages/forum-list/list",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "My Posts"
+		}
+	}, {
+		"path": "pages/forum-my/forum-my",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "My Posts"
+		}
+	}, {
+		"path": "pages/forum-add-or-update/forum-add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "My Posts"
+		}
+	}
+    ,{
+        "path": "common/linkOthers/linkOthers",
+        "style": {
+			"navigationBarBackgroundColor": "#EEFCFF",
+			"navigationBarTextStyle": "black"
+        }
+    }
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Biohealth management system",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#76C4D8",
+		"selectedColor": "#20849F",
+		"borderStyle": "white",
+		"backgroundColor": "#EEFCFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/index.png",
+				"selectedIconPath": "static/tabs/index1.png",
+				"text": "home page"
+			}
+			
+
+			,{
+				"pagePath": "pages/shiwuyingyang/list",
+				"iconPath": "/static/tabs/icon1.png",
+				"selectedIconPath": "/static/tabs/icon1_act.png",
+				"text": "food nutrition"
+			}
+
+
+
+
+			,{
+			 	"pagePath": "pages/forum-index/forum-index",
+				"iconPath": "static/tabs/forum.png",
+			 	"selectedIconPath": "static/tabs/forum_act.png",
+				"text": "Community interaction"
+			}
+
+
+			,{
+				"pagePath": "pages/center/center",
+				"iconPath": "static/tabs/mine.png",
+				"selectedIconPath": "static/tabs/mine1.png",
+				"text": "mine"
+			}
+		]
+	}
+}

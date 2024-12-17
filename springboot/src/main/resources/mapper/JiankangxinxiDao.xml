@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.JiankangxinxiDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.JiankangxinxiEntity" id="jiankangxinxiMap">
+        <result property="riqi" column="riqi"/>
+        <result property="zhuangtai" column="zhuangtai"/>
+        <result property="tizhong" column="tizhong"/>
+        <result property="xueya" column="xueya"/>
+        <result property="xuezhi" column="xuezhi"/>
+        <result property="xuetang" column="xuetang"/>
+        <result property="xinlv" column="xinlv"/>
+        <result property="yonghuzhanghao" column="yonghuzhanghao"/>
+        <result property="userid" column="userid"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.entity.vo.JiankangxinxiVO" >
+		SELECT * FROM jiankangxinxi  jiankangxinxi         
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.entity.vo.JiankangxinxiVO" >
+		SELECT  jiankangxinxi.* FROM jiankangxinxi  jiankangxinxi 	
+ 		<where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.entity.view.JiankangxinxiView" >
+
+		SELECT  jiankangxinxi.* FROM jiankangxinxi  jiankangxinxi 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.entity.view.JiankangxinxiView" >
+		SELECT * FROM jiankangxinxi  jiankangxinxi <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+
+    <select id="selectValue" resultType="map" >
+        SELECT ${params.xColumn}, ROUND(sum(${params.yColumn}),1) total FROM jiankangxinxi
+        <where> 1=1 ${ew.sqlSegment}</where>
+        group by ${params.xColumn}
+    </select>
+
+    <select id="selectTimeStatValue" resultType="map" >
+        <if test = 'params.timeStatType == "日"'>
+                SELECT DATE_FORMAT(${params.xColumn},'%Y-%m-%d') ${params.xColumn}, sum(${params.yColumn}) total FROM jiankangxinxi
+                <where> 1=1 ${ew.sqlSegment}</where>
+                group by DATE_FORMAT(${params.xColumn},'%Y-%m-%d')
+        </if>
+        <if test = 'params.timeStatType == "月"'>
+                SELECT DATE_FORMAT(${params.xColumn},'%Y-%m') ${params.xColumn}, sum(${params.yColumn}) total FROM jiankangxinxi
+                <where> 1=1 ${ew.sqlSegment}</where>
+                group by DATE_FORMAT(${params.xColumn},'%Y-%m')
+        </if>
+        <if test = 'params.timeStatType == "年"'>
+                SELECT DATE_FORMAT(${params.xColumn},'%Y') ${params.xColumn}, sum(${params.yColumn}) total FROM jiankangxinxi
+                <where> 1=1 ${ew.sqlSegment}</where>
+                group by DATE_FORMAT(${params.xColumn},'%Y')
+        </if>
+    </select>
+
+    <select id="selectGroup" resultType="map" >
+        SELECT ${params.column} , count(1) total FROM jiankangxinxi
+        <where> 1=1 ${ew.sqlSegment}</where>
+        group by ${params.column}
+    </select>
+
+    <select id="riqitizhongSectionStat" resultType="map" >
+        select
+        riqi,
+        sum(case when tizhong &lt;= 39 then 1 else 0 end) as 瘦,        sum(case when tizhong >= 40 and tizhong &lt;= 49 then 1 else 0 end) as 偏瘦,        sum(case when tizhong >= 50 and tizhong &lt;= 69 then 1 else 0 end) as 中等,        sum(case when tizhong >= 70 and tizhong &lt;= 79 then 1 else 0 end) as 偏胖,        sum(case when tizhong >= 80 then 1 else 0 end) as 肥胖        from jiankangxinxi
+        <where> 1=1 ${ew.sqlSegment}</where>
+        group by riqi
+    </select>
+    <select id="riqixueyaSectionStat" resultType="map" >
+        select
+        riqi,
+        sum(case when xueya &lt;= 59 then 1 else 0 end) as 低,        sum(case when xueya >= 60 and xueya &lt;= 79 then 1 else 0 end) as 偏低,        sum(case when xueya >= 79 and xueya &lt;= 119 then 1 else 0 end) as 正常,        sum(case when xueya >= 120 and xueya &lt;= 149 then 1 else 0 end) as 偏高,        sum(case when xueya >= 149 then 1 else 0 end) as 高        from jiankangxinxi
+        <where> 1=1 ${ew.sqlSegment}</where>
+        group by riqi
+    </select>
+    <select id="riqixinlvSectionStat" resultType="map" >
+        select
+        riqi,
+        sum(case when xinlv &lt;= 59 then 1 else 0 end) as 低,        sum(case when xinlv >= 60 and xinlv &lt;= 100 then 1 else 0 end) as 正常,        sum(case when xinlv >= 100 then 1 else 0 end) as 高        from jiankangxinxi
+        <where> 1=1 ${ew.sqlSegment}</where>
+        group by riqi
+    </select>
+
+
+</mapper>
